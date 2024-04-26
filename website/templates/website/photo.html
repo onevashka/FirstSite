@@ -1,0 +1,16 @@
+{% extends 'website/base.html' %}
+
+{% block title %} List Items {% endblock %}
+
+
+{% block content %}
+
+    <form method="post", enctype="multipart/form-data">
+
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Download</button>
+
+    </form>
+
+{% endblock %}

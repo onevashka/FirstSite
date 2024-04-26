@@ -1,0 +1,29 @@
+{% extends 'website/base.html' %}
+
+{% block title %} List Items {% endblock %}
+
+
+{% block content %}
+
+    <h1>{{ client.id }}</h1>
+    <h2>items_last_week</h2>
+    {% for item in items_last_week %}
+        <ul>
+            <p1>{{ item.name }}</p1><br>
+        </ul>
+    {% endfor %}
+    
+    <h2>items_last_month</h2>
+    {% for item in items_last_month %}
+    <ul>
+        <p1>{{ item.name }}</p1><br>
+    </ul>
+    {% endfor %}
+
+    <h2>items_last_year</h2>
+    {% for item in items_last_year %}
+    <ul>
+        <p1>{{ item.name }}</p1><br>
+    </ul>
+    {% endfor %}
+{% endblock %}
