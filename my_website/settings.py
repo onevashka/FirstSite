@@ -32,7 +32,7 @@ CSRF_COOKIE_SECURE = True
 
 ALLOWED_HOSTS = [
 
-    'ONEVASHKA.pythonanywhere.com',
+    '1vashka.pythonanywhere.com',
 
 
 ]
@@ -87,10 +87,10 @@ WSGI_APPLICATION = 'my_website.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ONEVASHKA$default',
-        'USER': 'ONEVASHKA',
+        'NAME': '1vashka$default',
+        'USER': '1vashka',
         'PASSWORD': os.getenv('MYSQL_PASSWORD'),
-        'HOST': 'ONEVASHKA.mysql.pythonanywhere-services.com',
+        'HOST': '1vashka.mysql.pythonanywhere-services.com',
         'OPTIONS': {
 
                     'init_command': 'SET NAMES "utf8mb4"; SET sql_mode="STRICT_TRANS_TABLES"',
